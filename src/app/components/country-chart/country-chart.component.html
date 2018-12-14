@@ -1,0 +1,33 @@
+<section class="country-chart">
+  <h3 id="chartTitle">{{title}}</h3>
+  <mat-divider></mat-divider>
+  <div class="container">
+    <div *ngIf="isProcessing()" class="progress-spinner">
+        <mat-progress-spinner color="primary" mode="indeterminate"></mat-progress-spinner>
+    </div>
+    <div class="chart-container">
+      <div class="chart">
+        <ngx-charts-bar-vertical 
+          [view]="view" 
+          [results]="results" 
+          [scheme]="colorScheme" 
+          [schemeType]="schemeType" 
+          [animations]="showAnimations" 
+          [legend]="showLegend" 
+          [xAxis]="showXAxis" 
+          [yAxis]="showYAxis" 
+          [showGridLines]="showGridLines" 
+          [roundDomains]="roundDomains" 
+          [showXAxisLabel]="showXAxisLabel" 
+          [showYAxisLabel]="showYAxisLabel" 
+          [xAxisLabel]="xAxisLabel" 
+          [yAxisLabel]="yAxisLabel" 
+          [gradient]="gradient" 
+          [barPadding]="barPadding" 
+          [roundEdges]="roundEdges" 
+          (select)="onSelect($event)">
+        </ngx-charts-bar-vertical>
+      </div>
+    </div>
+  </div>
+</section>

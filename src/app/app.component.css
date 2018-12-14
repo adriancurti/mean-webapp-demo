@@ -1,0 +1,29 @@
+.example-toolbar {
+  z-index: 9999;
+}
+
+.example-sidenav-container {
+  height: 100%;
+  width: 100%;
+}
+
+.example-sidenav {
+  height: 100%;
+  min-width: 200px !important;
+}
+
+.example-sidenav-content {
+  height: 100%;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  padding: 0;
+}
+
+.app-name {
+  color: white;
+}
